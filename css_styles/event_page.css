@@ -7,8 +7,9 @@
 
 #main_content {
     padding: 3%;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 5%;
+    width: 100%;
 }
 
 
@@ -37,6 +38,7 @@
     justify-content: center;
     align-items: center;
     gap: 10%;
+    padding: 0 3%;
 }
 
 #column-1 {
@@ -51,6 +53,7 @@
 
 .carousel-inner img {
     width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 1em;
 }
@@ -69,7 +72,7 @@
 }
 
 .google-img {
-    width: 100%;;
+    width: 100%;
 }
 
 .round_border {
@@ -82,7 +85,33 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    #two_columns {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 3%;
+    }
+
+    #column-1,
+    #column-3 {
+        max-width: 100%;
+        flex: none;
+        margin: 0 auto;
+    }
+
     #aboutus_text, #whoarewe_text {
         padding: 25px 3%;
+        margin: 0 auto;
+    }
+
+    .row {
+        padding-bottom: 3%;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 1em;
     }
 }
+/* END - Responsive Adjustments */
