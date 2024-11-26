@@ -112,6 +112,5 @@ footer {
 @media (max-width: 701px) {
     #main_content {
         margin-bottom: 20% !important;
-        border: red 6px solid !important; 
     }
 }
