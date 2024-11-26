@@ -42,3 +42,16 @@ body {
     justify-content: center;
     margin-bottom: 10%;
 }
+
+@media (max-width: 701px) {
+    .card-container {
+        gap: 5%; /* Smaller gap for mobile */
+        margin-bottom: 15%; /* Extra space below the container */
+    }
+
+    .card {
+        flex: 1 1 90%; /* Each card takes up 90% of the width on mobile */
+        margin: 10px auto; /* Center-align cards with spacing */
+    }
+
+}

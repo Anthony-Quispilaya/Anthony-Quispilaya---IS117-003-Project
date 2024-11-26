@@ -54,6 +54,10 @@
 .dropdown-menu .dropdown-item:hover {
     background-color: rgba(255, 255, 0, 0) !important;
 }
+
+.navbar-collapse {
+    width: 100%; /* Ensures it spans the full width */
+}
 /* END - Navbar Styling */
 
 
@@ -101,5 +105,13 @@ footer {
 
     .navbar-toggler {
         display: none;
+    }
+
+}
+
+@media (max-width: 701px) {
+    #main_content {
+        margin-bottom: 20% !important;
+        border: red 6px solid !important; 
     }
 }
